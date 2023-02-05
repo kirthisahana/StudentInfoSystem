@@ -45,15 +45,19 @@ overall topper of the institution.</li>
   </ol>
   
  <b> Frameworks/Languages Used </b>
+ <br>
 The languages that are used for coding the Online
 student information System are Active Server Pages (ASP),
 Java Servlets, Java Server Pages (JSP), HTML and
-JavaScript. For working on the coding phase of the Online
-Student Information System, the Internet Information
-Services (IIS) Server needs to be installed.
+JavaScript. Uses JDBC connectors to connect to the databases in SQL
 
-<b> Development Tools </b>
-Makes use of the available Java Development Tool kits for
-working with Java Beans and Java Server Pages. Also makes
-use of the online references available for developing programs
-in ASP, HTML and the scripting language JavaScript.
+
+<b>Requirements</b><br>
+Operating system : Platform independent. Can be run in windows,mac,linux <br>
+Software : JRE, MySQL<br>
+Library:<br> 
+<ul>
+<li> mysql-connector-java-8.0.23 </li>
+<li> servlet-api-5.5.23 </li>
+</ul>
+
