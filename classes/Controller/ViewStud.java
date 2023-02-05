@@ -21,7 +21,6 @@ public class ViewStud extends HttpServlet //throws IOException,ServletException,
 		System.out.println("Shabbaaa.... in view students function : f num : "+ x);
 		response.setContentType("text/html");
         PrintWriter out= response.getWriter();
-        //out.println("shabbbaaaa..... IN DETAILS FUNCTION- REGISTER NUMBER IS: "+x);
         out.println("<style>");
         out.println(".form-style, #result{");
           out.println("max-width: 500px;");
@@ -87,16 +86,6 @@ public class ViewStud extends HttpServlet //throws IOException,ServletException,
            
        // ResultSet res= sm.getmarks(x);
         System.out.println("in the marks function, result set is received");
-        //out.println("shabbbaaaa..... IN MODIFIED  DETAILS FUNCTION- REGISTER NUMBER IS: "+x);
-        //out.println("<table>");
-        //while(res.next())
-        //{
-          
-         
-        
-        //}
-        //out.println("</table>");
-        //out.println(".........................................................");
         }//try-end
 
         catch(Exception E){System.out.println(E);}
