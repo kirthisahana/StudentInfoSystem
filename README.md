@@ -1,4 +1,4 @@
-# Student information and mark management system
+# Student information management system
 
 This application is developed using Java, HTML and SQL database
 
