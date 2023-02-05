@@ -13,7 +13,7 @@ public class StudModel
   //3. Open a Connection
   try{
   String user = "root";
-  String password = "pswd12341";
+  String password = "pswd1234";
   Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/miniproj_db?autoReconnect=true&useSSL=false",user,password);
   System.out.println("con--->"+con);
   System.out.println("The username recd and the pwd recd is" +x+" "+y);
@@ -45,7 +45,7 @@ public ResultSet getdetails(String regnum) throws Exception
 
   Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
   String user = "root";
-  String password = "pswd12341";
+  String password = "pswd1234";
   Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/miniproj_db?autoReconnect=true&useSSL=false",user,password);
   System.out.println("con--->"+con);
   System.out.println("The register number received in getDetails is" +regnum);
