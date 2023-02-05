@@ -9,15 +9,12 @@ public class FacultyModel
  public String fetchdata( String x, String y) throws Exception
  {
    Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
-  //System.out.println("Hey I am after forname method");
-  //3. Open a Connection
   try{
   String user = "root";
-  String password = "#Dharshana1";
+  String password = "pswd1234";
   Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/miniproj_db?autoReconnect=true&useSSL=false",user,password);
   System.out.println("con--->"+con);
   System.out.println("The username recd and the pwd recd is" +x+" "+y);
-  System.out.println("HI :) IM JUS BEFORE THE EXECUTE QUERY");
   String s= "select * from FacultyLoginTable where username =  '"+ x +"'  ";
   Statement st= con.createStatement();
   ResultSet rs = st.executeQuery(s);
@@ -46,15 +43,10 @@ public ResultSet getcourses(String fnum) throws Exception
 {
 
   Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
-  //System.out.println("Hey I am after forname method");
-  //3. Open a Connection
-  
   String user = "root";
-  String password = "#Dharshana1";
+  String password = "pswd1234";
   Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/miniproj_db?autoReconnect=true&useSSL=false",user,password);
   System.out.println("con--->"+con);
-  System.out.println("The faculty number received in getcurrentmarks() is" +fnum);
-  System.out.println("HI :) IM JUS BEFORE THE EXECUTE QUERY");
   String s= "select * from FacSubTable where regnum =  '"+ fnum +"'  ";
   Statement st= con.createStatement();
   ResultSet rs = st.executeQuery(s);
@@ -68,15 +60,11 @@ public ResultSet getClasses(String fnum, String dept, String year, String sec, S
 {
   // To find whether the given fac teaches the given class the given course
   Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
-  //System.out.println("Hey I am after forname method");
-  //3. Open a Connection
-  
   String user = "root";
-  String password = "#Dharshana1";
+  String password = "pswd1234";
   Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/miniproj_db?autoReconnect=true&useSSL=false",user,password);
   System.out.println("con--->"+con);
   System.out.println("The faculty number received in getClasses() is" +fnum);
-  System.out.println("HI :) IM JUS BEFORE THE EXECUTE QUERY");
   String s= "select * from FacSubTable where regnum =  '"+ fnum +"' and dept='"+dept+" ' and year= '"+year+" ' and sec='"+sec+" 'and code='"+code+" ' ";
   Statement st= con.createStatement();
   ResultSet rs = st.executeQuery(s);
@@ -94,11 +82,9 @@ public ResultSet getStudentMarks(String dept, String year, String sec, String co
   //3. Open a Connection
   
   String user = "root";
-  String password = "#Dharshana1";
+  String password = "pswd1234";
   Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/miniproj_db?autoReconnect=true&useSSL=false",user,password);
   System.out.println("con--->"+con);
-  
-  System.out.println("HI :) IM JUS BEFORE THE EXECUTE QUERY");
   //String s= "select * from FacSubTable where regnum =  '"+ fnum +"' and dept='"+dept+" ' and year= '"+year+" ' and sec='"+sec+" ' ";
 
   String s= "   select regnum,"+column+" from MarksTable where dept =  '"+ dept +"' and "+subject+" = '"+y+"' and year='"+year+" ' and sec='"+sec+" '   ";
@@ -115,15 +101,10 @@ public int editmarksfunc(String dept, String year, String sec, String column, St
 {
 
   Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
-  //System.out.println("Hey I am after forname method");
-  //3. Open a Connection
-  
   String user = "root";
-  String password = "#Dharshana1";
+  String password = "pswd1234";
   Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/miniproj_db?autoReconnect=true&useSSL=false",user,password);
   System.out.println("con--->"+con);
-  
-  System.out.println("HI :) IM JUS BEFORE THE EXECUTE QUERY");
   //String s= "select * from FacSubTable where regnum =  '"+ fnum +"' and dept='"+dept+" ' and year= '"+year+" ' and sec='"+sec+" ' ";
 
   //String s= "   select regnum,"+column+" from MarksTable where dept =  '"+ dept +"' and "+subject+" = '"+y+"' and year='"+year+" ' and sec='"+sec+" '   ";
