@@ -43,7 +43,6 @@ out.println("</style>");
         StudModel sm= new StudModel();
         ResultSet res= sm.getother(r);
         System.out.println("in the details function, result set is received");
-        //out.println("shabbbaaaa..... IN MODIFIED  DETAILS FUNCTION- REGISTER NUMBER IS: "+x);
 
         out.println("<table>");
         while(res.next())
