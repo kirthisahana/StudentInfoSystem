@@ -18,15 +18,11 @@ public class Details extends HttpServlet //throws IOException,ServletException,E
 		
 
 		String x = request.getParameter("reg");
-		System.out.println("Shabbaaa.... in details function : reg num : "+ x);
 		response.setContentType("text/html");
         PrintWriter out= response.getWriter();
-        //out.println("shabbbaaaa..... IN DETAILS FUNCTION- REGISTER NUMBER IS: "+x);
          try{
         StudModel sm= new StudModel();
         ResultSet res= sm.getdetails(x);
-        System.out.println("in the details function, result set is received");
-        //out.println("shabbbaaaa..... IN MODIFIED  DETAILS FUNCTION- REGISTER NUMBER IS: "+x);
         out.println("<style>");
         out.println("table {");
 out.println("  border-collapse: separate;");
@@ -64,7 +60,6 @@ out.println("</style>");
         
         }
         out.println("</table>");
-        //out.println(".........................................................");
         }//try-end
 
         catch(Exception E){System.out.println(E);}
