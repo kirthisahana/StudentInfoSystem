@@ -27,10 +27,6 @@ public class CourseHand2 extends HttpServlet //throws IOException,ServletExcepti
 		//int p=0;
 		response.setContentType("text/html");
         PrintWriter out= response.getWriter();
-		System.out.println("Shabbaaa.... in coursehand222222 function : fnum : "+ f);
-		System.out.println("Shabbaaa.... in coursehand222222 function : dept : "+ dept);
-		System.out.println("shabbaaaa..... in course hand 22222 function : year :" +year);
-		System.out.println("shabbaaaa..... in course hand 22222 function : code :" +code);
 		out.println("<br><br><br>");
 		FacultyModel hi= new FacultyModel();
 		try{
