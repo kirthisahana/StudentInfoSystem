@@ -1,7 +1,5 @@
 // AdminModel
 
-//StudModel
-
 package Model;
 import java.util.*;
 import java.sql.*;
@@ -15,11 +13,10 @@ public class AdminModel
   //3. Open a Connection
   try{
   String user = "root";
-  String password = "#Dharshana1";
+  String password = "pswd1234";
   Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/miniproj_db?autoReconnect=true&useSSL=false",user,password);
   System.out.println("con--->"+con);
   System.out.println("The username recd and the pwd recd is" +x+" "+y);
-  System.out.println("HI :) IM JUS BEFORE THE EXECUTE QUERY");
   String s= "select * from AdminLoginTable where username =  '"+ x +"'  ";
   Statement st= con.createStatement();
   ResultSet rs = st.executeQuery(s);
@@ -50,15 +47,14 @@ public int addstudentdetails(String r, String year,String dept,String n, String 
 {
 
   Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
-  //System.out.println("Hey I am after forname method");
+
   //3. Open a Connection
   
   String user = "root";
-  String password = "#Dharshana1";
+  String password = "pswd1234";
   Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/miniproj_db?autoReconnect=true&useSSL=false",user,password);
   System.out.println("con--->"+con);
-  
-  System.out.println("HI :) IM JUS BEFORE THE EXECUTE QUERY");
+
   //String s= "select * from FacSubTable where regnum =  '"+ fnum +"' and dept='"+dept+" ' and year= '"+year+" ' and sec='"+sec+" ' ";
 
   //String s= "   select regnum,"+column+" from MarksTable where dept =  '"+ dept +"' and "+subject+" = '"+y+"' and year='"+year+" ' and sec='"+sec+" '   ";
@@ -75,15 +71,12 @@ public int addlogin(String r, String p) throws Exception
 {
 
   Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
-  //System.out.println("Hey I am after forname method");
-  //3. Open a Connection
-  
+
   String user = "root";
-  String password = "#Dharshana1";
+  String password = "pswd1234";
   Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/miniproj_db?autoReconnect=true&useSSL=false",user,password);
   System.out.println("con--->"+con);
   
-  System.out.println("HI :) IM JUS BEFORE THE EXECUTE QUERY");
   //String s= "select * from FacSubTable where regnum =  '"+ fnum +"' and dept='"+dept+" ' and year= '"+year+" ' and sec='"+sec+" ' ";
 
   //String s= "   select regnum,"+column+" from MarksTable where dept =  '"+ dept +"' and "+subject+" = '"+y+"' and year='"+year+" ' and sec='"+sec+" '   ";
@@ -101,15 +94,13 @@ public int addmarks(String r,String year, String sub1,String sub2,String sub3, i
 {
 
   Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
-  //System.out.println("Hey I am after forname method");
-  //3. Open a Connection
+
   
   String user = "root";
-  String password = "#Dharshana1";
+  String password = "pswd1234";
   Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/miniproj_db?autoReconnect=true&useSSL=false",user,password);
   System.out.println("con--->"+con);
   
-  System.out.println("HI :) IM JUS BEFORE THE EXECUTE QUERY");
   //String s= "select * from FacSubTable where regnum =  '"+ fnum +"' and dept='"+dept+" ' and year= '"+year+" ' and sec='"+sec+" ' ";
 
   //String s= "   select regnum,"+column+" from MarksTable where dept =  '"+ dept +"' and "+subject+" = '"+y+"' and year='"+year+" ' and sec='"+sec+" '   ";
@@ -128,15 +119,11 @@ public int addotherfac(String r, String o, String i) throws Exception
 {
 
   Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
-  //System.out.println("Hey I am after forname method");
-  //3. Open a Connection
-  
   String user = "root";
-  String password = "#Dharshana1";
+  String password = "pswd1234";
   Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/miniproj_db?autoReconnect=true&useSSL=false",user,password);
   System.out.println("con--->"+con);
   
-  System.out.println("HI :) IM JUS BEFORE THE EXECUTE QUERY");
   //String s= "select * from FacSubTable where regnum =  '"+ fnum +"' and dept='"+dept+" ' and year= '"+year+" ' and sec='"+sec+" ' ";
 
   //String s= "   select regnum,"+column+" from MarksTable where dept =  '"+ dept +"' and "+subject+" = '"+y+"' and year='"+year+" ' and sec='"+sec+" '   ";
@@ -153,15 +140,11 @@ public ResultSet fetchmarksbydept(String dept) throws Exception
 {
 
   Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
-  //System.out.println("Hey I am after forname method");
-  //3. Open a Connection
-  
   String user = "root";
-  String password = "#Dharshana1";
+  String password = "pswd1234";
   Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/miniproj_db?autoReconnect=true&useSSL=false",user,password);
   System.out.println("con--->"+con);
   
-  System.out.println("HI :) IM JUS BEFORE THE EXECUTE QUERY");
   //String s= "select * from FacSubTable where regnum =  '"+ fnum +"' and dept='"+dept+" ' and year= '"+year+" ' and sec='"+sec+" ' ";
 
   //String s= "   select regnum,"+column+" from MarksTable where dept =  '"+ dept +"' and "+subject+" = '"+y+"' and year='"+year+" ' and sec='"+sec+" '   ";
@@ -179,15 +162,11 @@ public ResultSet getmaxtotal(String dept, String year) throws Exception
 {
 
   Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
-  //System.out.println("Hey I am after forname method");
-  //3. Open a Connection
-  
   String user = "root";
-  String password = "#Dharshana1";
+  String password = "pswd1234";
   Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/miniproj_db?autoReconnect=true&useSSL=false",user,password);
   System.out.println("con--->"+con);
-  
-  System.out.println("HI :) IM JUS BEFORE THE EXECUTE QUERY");
+
   String s= "select regnum,sec,(SUM(m1)+SUM(m2)+SUM(m3) ) AS total from MarksTable where dept='"+dept+" ' and year= '"+year+"' GROUP BY regnum ORDER BY total DESC  ";
 
   //String s= "   select regnum,"+column+" from MarksTable where dept =  '"+ dept +"' and "+subject+" = '"+y+"' and year='"+year+" ' and sec='"+sec+" '   ";
@@ -205,15 +184,11 @@ public ResultSet getyear(String reg) throws Exception
 {
 
   Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
-  //System.out.println("Hey I am after forname method");
-  //3. Open a Connection
-  
   String user = "root";
-  String password = "#Dharshana1";
+  String password = "pswd1234";
   Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/miniproj_db?autoReconnect=true&useSSL=false",user,password);
   System.out.println("con--->"+con);
   
-  System.out.println("HI :) IM JUS BEFORE THE EXECUTE QUERY");
   String s= "select year from DetailsTable where regnum='"+reg+"' ";
 
   //String s= "   select regnum,"+column+" from MarksTable where dept =  '"+ dept +"' and "+subject+" = '"+y+"' and year='"+year+" ' and sec='"+sec+" '   ";
@@ -226,4 +201,4 @@ public ResultSet getyear(String reg) throws Exception
   return rs;
 }
 
-}//end of class studModel
+}
