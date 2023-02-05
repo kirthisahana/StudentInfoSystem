@@ -23,12 +23,10 @@ public class DisplayTopper extends HttpServlet //throws IOException,ServletExcep
 		System.out.println("in display topper function : year : "+ year); System.out.println("in display topper function : dept : "+ dept);
 		response.setContentType("text/html");
         PrintWriter out= response.getWriter(); String r=""; String curyear="";
-        //out.println("shabbbaaaa..... IN DETAILS FUNCTION- REGISTER NUMBER IS: "+x);
          try{
         AdminModel z= new AdminModel();
         ResultSet res= z.getmaxtotal(dept, year);
         System.out.println("in the details function, result set is received");
-        //out.println("shabbbaaaa..... IN MODIFIED  DETAILS FUNCTION- REGISTER NUMBER IS: "+x);
         out.println("<style>");
         out.println("table {");
 out.println("  border-collapse: separate;");
@@ -62,7 +60,6 @@ out.println("</style>");
          
         }
         out.println("</table>");
-        //out.println(".........................................................");
         }//try-end
 
         catch(Exception E){System.out.println(E);}
