@@ -22,9 +22,6 @@ public class Marks2 extends HttpServlet //throws IOException,ServletException,Ex
 		String column=""; boolean ans; String subject=""; int available=0; int p=0;
 		response.setContentType("text/html");
         PrintWriter out= response.getWriter();
-		System.out.println("Shabbaaa.... in marks222222 function : choice : "+ x);
-		System.out.println("Shabbaaa.... in marks222222 function : subject code : "+ y);
-		System.out.println("shabbaaaa..... in marks 22222 function : register number:" +r);
 		out.println("<br><br><br>");
 		StudModel sm= new StudModel();
     out.println("<html>");
