@@ -21,7 +21,6 @@ public class Final extends HttpServlet //throws IOException,ServletException,Exc
 		//String column=""; boolean ans; String subject=""; int available=0; int p=0;
 		response.setContentType("text/html");
         PrintWriter out= response.getWriter();
-		System.out.println("Shabbaaa.... in final 222222 function : choice : "+ dept);
 		
 		
     out.println("<html>");
@@ -53,22 +52,7 @@ out.println("</style>");
               out.println("<th> REGNUM </th> <th> YEAR </th> <th> SUB </th><th> SUB  </th><th> SUB </th><th> MARK </th><th> MARK </th><th> MARK </th> ");
               out.println("</tr> ");
           while(a.next())
-          {
-          	/*
-           out.println("<tr><th> REGISTER NUMBER: </th><td>"+a.getString(1)+"</td></tr> ");
-              out.println("<tr><th>  YEAR : </th><td>"+a.getString(2)+"</td></tr> ");
-               out.println("<tr><th> DEPT: </th><td>"+a.getString(9)+"</td></tr> ");
-              out.println("<tr><th> SECTION: </th><td>"+a.getString(10)+"</td></tr> ");
-              out.println("<tr><th> SUB CODE : </th><td>"+a.getString(3)+"</td></tr> ");
-              out.println("<tr><th> MARK: </th><td>"+a.getString(6)+"</td></tr> ");
-              out.println("<tr><th> SUB CODE: </th><td>"+a.getString(4)+"</td></tr> ");
-              out.println("<tr><th> MARK: </th><td>"+a.getString(7)+"</td></tr> ");
-              out.println("<tr><th> SUB CODE: </th><td>"+a.getString(5)+"</td></tr> ");
-              out.println("<tr><th> MARK: </th><td>"+a.getString(8)+"</td></tr> ");*/
-
-
-
-              
+          {              
               out.println("<tr> ");
               out.println("<td>"+a.getString(1)+" </td> <td>"+a.getString(2)+"</td> <td>"+a.getString(3)+"</td> <td>"+a.getString(4)+"</td ><td>"+a.getString(5)+"</td> ");
               out.println("<td>"+a.getString(6)+" </td> <td>"+a.getString(7)+"</td>  <td>"+a.getString(8)+"</td>  ");
