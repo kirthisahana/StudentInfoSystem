@@ -31,12 +31,6 @@ public class Second extends HttpServlet //throws IOException,ServletException,Ex
 		//int p=0;
 		response.setContentType("text/html");
         PrintWriter out= response.getWriter();
-		System.out.println("Shabbaaa.... in second  function : fnum : "+ f);
-		System.out.println("Shabbaaa.... in second  function : dept : "+ dept);
-		System.out.println("shabbaaaa..... in second  function : year :" +year);
-		System.out.println("shabbaaaa..... in second  function : code :" +code);
-		System.out.println("shabbaaaa..... in second  function : regnum :" +r);
-        System.out.println("shabbaaaa..... in second  function : integer mark :" +nmark);
 		out.println("<br><br><br>");
 		FacultyModel lol= new FacultyModel();
 		try{
