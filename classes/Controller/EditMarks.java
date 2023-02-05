@@ -23,7 +23,6 @@ public class EditMarks extends HttpServlet //throws IOException,ServletException
 		System.out.println("Shabbaaa.... in edit marks function : f num : "+ x);
 		response.setContentType("text/html");
         PrintWriter out= response.getWriter();
-        //out.println("shabbbaaaa..... IN DETAILS FUNCTION- REGISTER NUMBER IS: "+x);
         out.println("<html>");
         out.println("<style>");
         out.println(".form-style, #result{");
@@ -94,16 +93,7 @@ public class EditMarks extends HttpServlet //throws IOException,ServletException
            
        // ResultSet res= sm.getmarks(x);
         System.out.println("in the edit marks function, result set is received");
-        //out.println("shabbbaaaa..... IN MODIFIED  DETAILS FUNCTION- REGISTER NUMBER IS: "+x);
-        //out.println("<table>");
-        //while(res.next())
-        //{
-          
-         
-        
-        //}
-        //out.println("</table>");
-        //out.println(".........................................................");
+
         out.println("</html>");
         }//try-end
 
