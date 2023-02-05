@@ -16,7 +16,6 @@ public class Large extends HttpServlet //throws IOException,ServletException,Exc
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException,ServletException
 	{
 		
-        System.out.println("WELCOME TO LARGE FUNC...");
 		String r = request.getParameter("reg");
 		String p = request.getParameter("pwd");
 		String n = request.getParameter("sname");
@@ -41,22 +40,12 @@ public class Large extends HttpServlet //throws IOException,ServletException,Exc
         int aff=0; int we=0; int lo=0; int shi=0;
 		response.setContentType("text/html");
         PrintWriter out= response.getWriter();
-        /*
-		console.log(r ); console.log(p ); console.log(n ); console.log("g "); console.log("d "); console.log("e "); console.log("ph "); console.log("a "); 
-		console.log("dept "); console.log("o "); console.log("i "); console.log(" gname"); console.log("gph ");
-		 console.log(" sec"); console.log("year "); console.log("sub1 "); console.log("sub2 "); console.log("sub3 "); console.log("m1 "); console.log("m2 ");
-		console.log("m3 "); */
 
 		System.out.println(r); System.out.println(p); System.out.println(n); System.out.println(g); System.out.println(d); System.out.println(e); 
 		System.out.println(ph);
 		System.out.println(a); System.out.println(dept); System.out.println(o); System.out.println(i); System.out.println(gname); System.out.println(gph);
 		System.out.println(sec); System.out.println(year); System.out.println(sub1); System.out.println(sub2); System.out.println(sub3); System.out.println(m1); 
 		System.out.println(m2); System.out.println(m3);
-		//console.log(" "); console.log(" ");
-		
-		//System.out.println("Shabbaaa.... in view students function : f num : "+ x);
-		
-        //out.println("shabbbaaaa..... IN DETAILS FUNCTION- REGISTER NUMBER IS: "+x);
          try{
 
             AdminModel am= new AdminModel();
