@@ -17,10 +17,8 @@ public class CourseHand extends HttpServlet //throws IOException,ServletExceptio
 		
 
 		String x = request.getParameter("fnum");
-		System.out.println("Shabbaaa.... in CourseHand function : f num : "+ x);
 		response.setContentType("text/html");
         PrintWriter out= response.getWriter();
-        //out.println("shabbbaaaa..... IN DETAILS FUNCTION- REGISTER NUMBER IS: "+x);
         out.println("<style>");
         out.println("table {");
 out.println("  border-collapse: separate;");
@@ -43,8 +41,6 @@ out.println("</style>");
          try{
         FacultyModel fm= new FacultyModel();
         ResultSet res= fm.getcourses(x);
-        //System.out.println("in the details function, result set is received");
-        //out.println("shabbbaaaa..... IN MODIFIED  DETAILS FUNCTION- REGISTER NUMBER IS: "+x);
 
         out.println("COURSES HANDLED BY: "+x);
         out.println("<table>");
@@ -69,7 +65,6 @@ out.println("</style>");
         
         }
         out.println("</table>");
-        //out.println(".........................................................");
         }//try-end
 
         catch(Exception E){System.out.println(E);}
