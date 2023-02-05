@@ -14,13 +14,9 @@ public class AddStudent extends HttpServlet //throws IOException,ServletExceptio
 {
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException,ServletException
 	{
-		
 
-		//String x = request.getParameter("reg");
-		//System.out.println("Shabbaaa.... in marks function : reg num : "+ x);
 		response.setContentType("text/html");
         PrintWriter out= response.getWriter();
-        //out.println("shabbbaaaa..... IN DETAILS FUNCTION- REGISTER NUMBER IS: "+x);
          try{
         //StudModel sm= new StudModel();
 
@@ -235,16 +231,7 @@ public class AddStudent extends HttpServlet //throws IOException,ServletExceptio
            
        // ResultSet res= sm.getmarks(x);
         System.out.println("in the marks function, result set is received");
-        //out.println("shabbbaaaa..... IN MODIFIED  DETAILS FUNCTION- REGISTER NUMBER IS: "+x);
-        //out.println("<table>");
-        //while(res.next())
-        //{
-          
-         
-        
-        //}
-        //out.println("</table>");
-        //out.println(".........................................................");
+
         }//try-end
 
         catch(Exception E){System.out.println(E);}
