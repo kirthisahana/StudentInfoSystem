@@ -15,10 +15,6 @@ public class Topper extends HttpServlet //throws IOException,ServletException,Ex
 {
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException,ServletException
 	{
-		
-
-		//String x = request.getParameter("reg");
-		//System.out.println("Shabbaaa.... in marks function : reg num : "+ x);
 		response.setContentType("text/html");
         PrintWriter out= response.getWriter();
         
@@ -63,18 +59,7 @@ public class Topper extends HttpServlet //throws IOException,ServletException,Ex
            out.println("<input type='button' value='Submit'  onclick='epicfunc(dept.value,year.value,)'  id='b4'> ");
            out.println("</form>");
            
-       // ResultSet res= sm.getmarks(x);
-        //System.out.println("in the marks function, result set is received");
-        //out.println("shabbbaaaa..... IN MODIFIED  DETAILS FUNCTION- REGISTER NUMBER IS: "+x);
-        //out.println("<table>");
-        //while(res.next())
-        //{
-          
-         
-        
-        //}
-        //out.println("</table>");
-        //out.println(".........................................................");
+      
         }//try-end
 
         catch(Exception E){System.out.println(E);}
